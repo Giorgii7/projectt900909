@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-image: url(img/ss.jpeg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+
+        .center{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-right: 100px;
+        }
+
+        .aa{
+            text-decoration: dashed;
+            font-size: 30px;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .ee{
+            text-decoration: dashed;
+            font-size: 25px;
+            margin-left: 50px;
+            color: white;
+        }
+
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        .hh{
+            font-size: 100px;
+            display: flex;
+            justify-content: center;
+            color: rgb(90, 84, 84);
+            opacity: 0;
+            transform: translateY(40px);
+            animation: fadeUp 1s forwards;
+        }
+
+        .p1{
+            color: rgb(90, 84, 84);
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+            margin-top: -50px;
+            opacity: 0;
+            transform: translateY(40px);
+            animation: fadeUp 1.3s forwards;
+        }
+
+        .button{
+            margin-left: 670px;
+            opacity: 0;
+            transform: translateY(40px);
+            animation: fadeUp 1.6s forwards;
+        }
+
+        .btn{
+            display: inline-block;
+            padding: 10px 30px;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 25px;
+            transition: 0.3s;
+        }
+
+        .btn:hover{
+            background-color: #e64a19;
+            transform: scale(1.1);
+        }
+
+        .black{
+            background-color: black;
+            margin-top: 700px;
+            position: relative;
+            height: 100vh;
+        }
+
+        .imm{
+            width: 564px;
+            height: auto;
+            object-fit: cover;
+            margin-left: 40px;
+            margin-top: 30px;
+            display: block;
+            transition: 0.4s;
+        }
+
+        .imm:hover{
+            transform: scale(1.05);
+        }
+
+        .hh1{
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            margin-top: -60px;
+            font-size: 50px;
+            text-align: left;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeUp 1s forwards;
+        }
+
+        .ppp{
+            margin-top: -50px;
+            color: darkorange;
+        }
+
+        .ppp1{
+            font-size: 20px;
+            margin-top: -20px;
+        }
+
+        .oo{
+            width: 150px;
+            border-radius: 80px;
+            margin-top: 150px;
+            margin-left: 160px;
+            transition: 0.4s;
+        }
+
+        .oo:hover{
+            transform: rotate(10deg) scale(1.1);
+        }
+
+        .white{
+            background-color: honeydew;
+            position: relative;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+        }
+
+        .hr{
+            font-size: 90px;
+            color: black;
+            margin-top: -5px;
+        }
+
+        .ii{
+            color: rgb(25, 24, 24);
+            font-size: 20px;
+            margin-top: -30px;
+        }
+
+        .btn1{
+            display: inline-block;
+            padding: 10px 30px;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 25px;
+            margin-left: 150px;
+            background-color: black;
+            color: white;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        .btn1:hover{
+            background-color: honeydew;
+            color: black;
+            transform: scale(1.1);
+        }
+
+        .black2{
+            background-color: black;
+            position: relative;
+            height: 100vh;
+            margin-top: -60px;
+        }
+
+        .rr{
+            width: 700px;
+            height: 500px;
+            transition: 0.4s;
+        }
+
+        .rr:hover{
+            transform: scale(1.05);
+        }
+
+        .imd{
+            display: flex;
+            justify-content: start;
+            margin-left: 60px;
+            margin-top: 50px;
+        }
+
+        .dd{
+            color: white;
+            margin-left: 60px;
+            font-size: 80px;
+        }
+
+        .iip{
+            color: white;
+            margin-left: 100px;
+            font-size: 50px;
+            margin-top: 150px;
+        }
+
+        .gp{
+            color: white;
+            margin-left: 110px;
+            margin-top: -10px;
+            font-size: 20px;
+        }
+
+        .ssw{
+            color: white;
+            font-size: 20px;
+            margin-top: 20px;
+            margin-left: 110px;
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        .aa:hover{
+            color: rgb(123, 255, 0);
+            transform: scale(1.1);
+        }
+
+        @keyframes fadeUp{
+            to{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav class="container">
+        <a class="ee" href="#">The chef and the table</a>
+
+        <div class="center">
+            <a class="aa" href="index.html">Home</a>
+            <a class="aa" href="menu.html">Menu</a>
+        </div>
+    </nav>
+
+    <div>
+        <h1 class="hh">Taste Sensation</h1>
+        <p class="p1">Elevate Your Culinary Journey</p>
+    </div>
+
+    <div class="button">
+        <a href="#Whyus"><button class="btn">Expore</button></a>
+    </div>
+
+    <div class="black">
+        <div class="hh1">
+            <h1>Our <br> Culinary <br> Story</h1>
+            <p class="ppp">Experience It</p>
+            <p class="ppp1">
+                Immerse yourself in the unique dining experience at <br>
+                The chef and the table...
+            </p>
+        </div>
+
+        <div class="imn">
+            <img class="imm" src="img/75059a_411095520cfd478fb9aaf424853f6429~mv2.jpeg">
+        </div>
+    </div>
+
+    <div class="white">
+        <div class="im3">
+            <img class="oo" src="img/esss.jpg">
+            <h1 class="hr">Indulge Now</h1>
+            <p class="ii">
+                Treat yourself to a culinary journey like no other.
+            </p>
+
+            <a href="menu.html">
+                <button class="btn1">Book Now</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="black2">
+        <h1 id="Whyus" class="dd">Why Us</h1>
+
+        <div class="imd">
+            <img class="rr" src="img/www.jpeg">
+
+            <div>
+                <h1 class="iip">Unique Taste</h1>
+                <p class="gp">Local Ingredients</p>
+                <p class="ssw">
+                    Our emphasis on using the best local <br> ingredients ensures that each dish is a <br> culinary masterpiece, highlighting the rich <br> flavors and quality of our region.
+
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
